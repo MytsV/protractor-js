@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Protractor</title>
-</head>
-<body>
-    <p>Upload an image to measure angles</p>
-    <canvas width="200" height="200"></canvas>
-    <button id="upload-image">Upload</button>
-    <button id="add-angle">Add</button>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <title>Protractor</title>
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <p>Upload an image to measure angles</p>
+        <div id="canvas-container" style="width: 500px; height: max-content">
+            <canvas width="200" height="200" id="view" style="width: 100%; height: 100%"></canvas>
+        </div>
+        <input type="file" accept="image/*" id="upload-image">
+        <button id="add-angle">Add</button>
+    </body>
 </html>
